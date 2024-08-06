@@ -52,18 +52,26 @@
     border-radius: 10px;
   }
 
+  .typing-animation {
+    display: inline-block;
+    min-height: 1em; /* Adjust as needed to ensure it covers the tallest word */
+}
 
-  .typing-animation::after {
-    
+.typing-animation::after {
+    content: "";
     animation: blink 0.7s step-end infinite;
-  }
-  @keyframes blink {
+    display: inline-block;
+    width: 1ch; /* Ensure it takes up space even when there's no text */
+}
+
+@keyframes blink {
     50% {
-      opacity: 0;
+        opacity: 0;
     }
-  }
+}
 
 
   .close-button {
     top: 1rem;
     right: 1rem;
+  }
