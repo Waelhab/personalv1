@@ -1,0 +1,69 @@
+.almarai-light {
+    font-family: "Almarai", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .almarai-regular {
+    font-family: "Almarai", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .almarai-bold {
+    font-family: "Almarai", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .almarai-extrabold {
+    font-family: "Almarai", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .dark {
+    background-color: #1a202c;
+    color: #a0aec0;
+  }
+
+
+  .progress-bar {
+    transition: width 1s ease-out; /* Adjust the duration and easing as needed */
+  }
+  
+
+  .progress-container {
+    width: 100%;
+    max-width: 300px;
+    margin: 50px auto;
+  }
+  .progress-bar-background {
+    width: 100%;
+    height: 20px;
+    background-color: #e5e7eb; /* Tailwind CSS gray-200 */
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .progress-bar-fill {
+    height: 100%;
+    background-color: #6366f1; /* Tailwind CSS indigo-600 */
+    width: 0;
+    border-radius: 10px;
+  }
+
+
+  .typing-animation::after {
+    
+    animation: blink 0.7s step-end infinite;
+  }
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+
+
+  .close-button {
+    top: 1rem;
+    right: 1rem;
