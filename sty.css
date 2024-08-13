@@ -51,7 +51,6 @@
     width: 0;
     border-radius: 10px;
   }
-
   .typing-animation {
     display: inline-block;
     min-height: 1em; /* Adjust as needed to ensure it covers the tallest word */
@@ -65,9 +64,7 @@
 }
 
 @keyframes blink {
-    50% {
-        opacity: 0;
-    }
+    50% { opacity: 0; }
 }
 
 
