@@ -70,7 +70,7 @@ const filteredIds = [
 // Array of innerHTML content (filtered and without tags)
 const filteredInnerHTMLContent = [
   "تحديث جديد:",
-"  اللغة العربية عند دغط وائل حبيب ",
+"  اللغة العربية عند الضغط على وائل حبيب ",
   "Available for work",
   "Wael Alkiyani",
   "I am a multilingual Saudi with a major in IT, specializing in software engineering. I have extensive experience as a full stack developer, proficient in both front-end and back-end technologies. I have had the privilege of working at prestigious events such as the Red Sea Film Festival (RSFF), Formula 1, and FIFA. My diverse skill set and international experience allow me to adapt quickly and excel in dynamic environments.",
