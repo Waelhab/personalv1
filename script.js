@@ -1,8 +1,7 @@
 
 let isEnglish = true;
 const filteredIds = [
-  "updateTitle",
-  "updateInfo",
+  
   "availability-text-section1",
   "name-section1",
   "description-section1",
@@ -69,8 +68,7 @@ const filteredIds = [
 
 // Array of innerHTML content (filtered and without tags)
 const filteredInnerHTMLContent = [
-  "تحديث جديد:",
-"  اللغة العربية عند الضغط على وائل حبيب ",
+  
   "Available for work",
   "Wael Alkiyani",
   "I am a multilingual Saudi with a major in IT, specializing in software engineering. I have extensive experience as a full stack developer, proficient in both front-end and back-end technologies. I have had the privilege of working at prestigious events such as the Red Sea Film Festival (RSFF), Formula 1, and FIFA. My diverse skill set and international experience allow me to adapt quickly and excel in dynamic environments.",
@@ -158,34 +156,32 @@ const filteredInnerHTMLContent = [
 
 // Array of Arabic translations (filtered and without tags)
 const filteredArabicTranslations = [
-"New Update :",
 
-"English Language by clicking on Wael Habib",
   "متاح للعمل",
   "وائل الكياني",
-  "أنا سعودي متعدد اللغات متخصص في تكنولوجيا المعلومات، أخصائي في هندسة البرمجيات. لدي خبرة واسعة كمطور برمجيات كامل، متمرس في تقنيات الواجهة الأمامية والخلفية. لقد حظيت بفرصة العمل في أحداث مرموقة مثل مهرجان البحر الأحمر السينمائي (RSFF)، الفورمولا 1، والفيفا. تتيح لي مجموعتي المتنوعة من المهارات والخبرة الدولية التكيف بسرعة والتفوق في البيئات الديناميكية.",
+  "أنا طالب سعودي أتحدث 4 لغات، متخصص في تقنية المعلومات وأدرس هندسة البرمجيات. لدي خبرة في تطوير الويب الكامل، الموارد البشرية والسياحة. عملت مع شركات كبيرة مثل مهرجان البحر الأحمر السينمائي (RSFF)، الفورمولا 1، والفيفا.",
   "2024: مطور برمجيات كامل @إدفاباي",
-  "2023: رئيس المتطوعين @مهرجان البحر الأحمر السينمائي",
+  "2023: مدير المتطوعين @مهرجان البحر الأحمر السينمائي",
   "جميع الإنجازات العملية",
   "أرسل لي رسالة",
   "السيرة الذاتية",
   " Wael Habib",
   "التقنيات",
-  "أدواتي الرقمية",
+"مجموعة أدواتي البرمجية",
   "عش كأنك تموت غدًا، وتعلم كأنك تعيش أبداً.",
 
   "علم النفس",
   "5+ سنوات",
-  "التنفيذ الاحترافي",
-  "تنفيذ احترافي", // badge4
+  "العمل في بيئة رسمية",  
+  "العمل في بيئة رسمية",  
   "5+ سنوات", // badge5
   "تعلمت عدة أطر عمل", // badge6
   "تعليم ذاتي", // badge7
-  "تنفيذ احترافي", // badge8
+  "العمل في بيئة رسمية",  
   "5+ سنوات", // badge9
   "تعلمت عدة أطر عمل", // badge10
   "تعليم ذاتي", // badge11
-  "تنفيذ احترافي", // badge12
+  "العمل في بيئة رسمية",  
   "5+ سنوات", // badge13
   "تعلمت عدة أطر عمل", // badge14
   "منهج الجامعة", // badge15
@@ -196,14 +192,14 @@ const filteredArabicTranslations = [
   "تعليم ذاتي", // badge20
   "1+ سنوات", // badge21
   "تعلمت عدة مكتبات", // badge22
-  "تنفيذ احترافي", // badge23
+  "العمل في بيئة رسمية",  
   "تعليم ذاتي", // badge24
   "استخدام الواجهة الأمامية بشكل احترافي", // badge25
   "5+ سنوات", // badge26
   "تعلمت عدة مكتبات", // badge27
   "تعليم ذاتي", // badge28
   "2+ سنوات", // badge29
-  "تنفيذ احترافي", // badge30
+  "العمل في بيئة رسمية",  
   "1+ سنوات", // badge31
   "تعليم ذاتي", // badge32
   "الشركات التي ساهمت فيها",
@@ -282,9 +278,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
     type();
   });
-  const contactLink = document.getElementById('contactLink');
-  const modalBg = document.getElementById('modalBg');
-  const closeModal = document.getElementById('closeModal');
+
 
 
 
@@ -292,6 +286,19 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // translation
 
+
+
+function closePopup() {
+  document.getElementById('popup').style.display = 'none';
+}
+
+function openModal() {
+  document.getElementById('notificationsModal').classList.remove('hidden');
+}
+
+function closeModal() {
+  document.getElementById('notificationsModal').classList.add('hidden');
+}
 
 function changetypedata() {
     const element = document.getElementById('typing-animation-section1');
